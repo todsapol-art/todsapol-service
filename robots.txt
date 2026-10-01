@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://todsapol-art.github.io/todsapol-service/sitemap.xml
