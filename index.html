@@ -13,7 +13,48 @@ header,footer{background:#211b17;color:#fff;padding:20px 0}nav{display:flex;just
 section{padding:55px 0}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.card{background:#fff;padding:22px;border:1px solid #ddd3c7;border-radius:12px}.card h3{margin-top:0}
 .step{background:#fff;border-left:4px solid #7b4d2a;padding:16px 20px;margin:12px 0}.note{background:#eee5da;padding:22px;border-radius:12px}.btn{display:inline-block;padding:11px 18px;border:1px solid #7b4d2a;border-radius:8px;text-decoration:none;margin:18px 8px 0 0}.primary{background:#7b4d2a;color:#fff}
 @media(max-width:760px){.grid{grid-template-columns:1fr}nav div{display:none}}
-</style>
+.works{
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:18px;
+  margin:20px 0 30px;
+}
+
+.works .card{
+  min-width:0;
+}
+
+.works iframe{
+  width:100%;
+  aspect-ratio:9/16;
+  border:0;
+  border-radius:12px;
+  display:block;
+}
+
+/* มือถือ */
+@media(max-width:600px){
+  .works{
+    grid-template-columns:1fr 1fr;
+    gap:10px;
+  }
+}
+
+/* iPad */
+@media(min-width:601px) and (max-width:1024px){
+  .works{
+    grid-template-columns:repeat(2,1fr);
+    gap:16px;
+  }
+}
+
+/* คอม */
+@media(min-width:1025px){
+  .works{
+    grid-template-columns:repeat(2,1fr);
+    gap:20px;
+  }
+}</style>
 </head>
 <body>
 <header><div class="wrap"><nav><strong>รับซ่อมและอนุรักษ์งานศิลปะ</strong><div><a href="#services">บริการ</a><a href="#process">ขั้นตอน</a><a href="#portrait">วาดภาพเหมือน</a><a href="#contact">ติดต่อ</a></div></nav></div></header>
@@ -58,7 +99,38 @@ section{padding:55px 0}.grid{display:grid;grid-template-columns:repeat(3,1fr);ga
 <p>รับวาดรูปภาพเหมือนและภาพเหมือนจริงจากภาพถ่าย ทั้งสีน้ำมัน สีน้ำ และสีอะคริลิก สามารถสอบถามขนาด เทคนิค และรายละเอียดของงานก่อนเริ่มได้</p>
 </div>
   </section>
+<section>
+  <div class="wrap">
+    <h2>ตัวอย่างผลงาน</h2>
+    <p>ตัวอย่างผลงานอนุรักษ์และบูรณะงานศิลปะ รวมถึงงานวาดภาพ</p>
 
+    <h3>งานอนุรักษ์และบูรณะ</h3>
+    <div class="works">
+      <div class="card">
+        <iframe src="https://www.youtube.com/embed/o9UjXBvzJr8" title="ผลงานอนุรักษ์และบูรณะ 1" frameborder="0" allowfullscreen></iframe>
+      </div>
+      <div class="card">
+        <iframe src="https://www.youtube.com/embed/RAu2_CVYCeo" title="ผลงานอนุรักษ์และบูรณะ 2" frameborder="0" allowfullscreen></iframe>
+      </div>
+    </div>
+
+    <h3>งานวาดภาพ</h3>
+    <div class="works">
+      <div class="card">
+        <iframe src="https://www.youtube.com/embed/5mo-1sEAUfo" title="ผลงานวาดภาพ 1" frameborder="0" allowfullscreen></iframe>
+      </div>
+      <div class="card">
+        <iframe src="https://www.youtube.com/embed/9KwrxksYRy8" title="ผลงานวาดภาพ 2" frameborder="0" allowfullscreen></iframe>
+      </div>
+    </div>
+
+    <p>
+      <a href="https://todsapol-art.github.io/todsapol-website/">
+        ดูผลงานและประวัติทั้งหมดของ Todsapol Yingphol →
+      </a>
+    </p>
+  </div>
+</section>
 <section id="contact">
   <div class="wrap"><h2>ติดต่อสอบถามงาน</h2>
 <p>สอบถามเรื่องรับซ่อมภาพจิตรกรรม รับอนุรักษ์งานศิลปะ รับบูรณะภาพ หรือรับวาดภาพเหมือน สามารถส่งภาพเพื่อประเมินเบื้องต้นได้</p>
